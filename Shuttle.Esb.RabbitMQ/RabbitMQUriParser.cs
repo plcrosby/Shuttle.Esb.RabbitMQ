@@ -61,7 +61,7 @@ namespace Shuttle.Esb.RabbitMQ
                 Port = Port,
                 UserName = Username,
                 Password = Password,
-                Path = VirtualHost == "/" ? $"/{Queue}" : $"/{VirtualHost}/{Queue}"
+                Path = VirtualHost == "/" ? $"/{Queue}" : $"/{VirtualHost}{Queue}"
             };
 
             Uri = builder.Uri;
